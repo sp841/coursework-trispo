@@ -1,0 +1,3 @@
+﻿  SERVER.cpp
+C:\Users\Admin\source\repos\SERVER\SERVER.cpp(29,2): warning C4551: в вызове функции отсутствует список аргументов
+  SERVER.vcxproj -> C:\Users\Admin\source\repos\SERVER\Debug\SERVER.exe
