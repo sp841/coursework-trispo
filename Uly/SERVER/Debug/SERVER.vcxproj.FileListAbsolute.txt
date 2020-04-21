@@ -1,0 +1,4 @@
+C:\Users\Admin\source\repos\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\SERVER\Debug\SERVER.pdb
+D:\STUDY\ТРиСПО.Труханович\Новая папка\SERVER\Debug\SERVER.exe
+D:\STUDY\ТРиСПО.Труханович\Новая папка\SERVER\Debug\SERVER.pdb

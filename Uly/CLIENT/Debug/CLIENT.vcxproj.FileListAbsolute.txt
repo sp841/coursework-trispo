@@ -1,0 +1,4 @@
+C:\Users\Admin\source\repos\CLIENT\Debug\CLIENT.exe
+C:\Users\Admin\source\repos\CLIENT\Debug\CLIENT.pdb
+D:\STUDY\ТРиСПО.Труханович\Новая папка\CLIENT\Debug\CLIENT.exe
+D:\STUDY\ТРиСПО.Труханович\Новая папка\CLIENT\Debug\CLIENT.pdb
