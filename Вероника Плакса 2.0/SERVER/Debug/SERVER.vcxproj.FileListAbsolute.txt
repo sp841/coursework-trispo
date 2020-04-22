@@ -1,0 +1,4 @@
+C:\Users\Admin\source\repos\Вероника Плакса\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\Вероника Плакса\SERVER\Debug\SERVER.pdb
+C:\Users\Admin\source\repos\Вероника Плакса 2.0\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\Вероника Плакса 2.0\SERVER\Debug\SERVER.pdb
