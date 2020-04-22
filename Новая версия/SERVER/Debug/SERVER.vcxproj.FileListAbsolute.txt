@@ -1,0 +1,4 @@
+C:\Users\Admin\source\repos\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\SERVER\Debug\SERVER.pdb
+C:\Users\Admin\source\repos\Алеся Лагун\Новая версия\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\Алеся Лагун\Новая версия\SERVER\Debug\SERVER.pdb
