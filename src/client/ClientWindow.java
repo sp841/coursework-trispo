@@ -7,6 +7,7 @@ import java.awt.event.*;
 import java.io.*;
 import java.net.Socket;
 import java.util.Scanner;
+import java.util.Date;
 
 public class ClientWindow extends JFrame {
     // адрес сервера
@@ -21,7 +22,7 @@ public class ClientWindow extends JFrame {
     private PrintWriter outMessage;
     // следующие поля отвечают за элементы формы
     private JTextField jtfMessage;
-    private JTextField jtfName;
+
     private JTextArea jtaTextAreaMessage;
     // имя клиента
     private String clientName = "";
@@ -50,23 +51,24 @@ public class ClientWindow extends JFrame {
         JScrollPane jsp = new JScrollPane(jtaTextAreaMessage);
         add(jsp, BorderLayout.CENTER);
         // label, который будет отражать количество клиентов в чате
-        JLabel jlNumberOfClients = new JLabel("Количество клиентов в чате: ");
+        Date date = new Date();
+        JLabel jlNumberOfClients = new JLabel("Igor Volchek: "+date);
         add(jlNumberOfClients, BorderLayout.NORTH);
         JPanel bottomPanel = new JPanel(new BorderLayout());
         add(bottomPanel, BorderLayout.SOUTH);
         JButton jbSendMessage = new JButton("Отправить");
         bottomPanel.add(jbSendMessage, BorderLayout.EAST);
-        jtfMessage = new JTextField("Введите ваше сообщение: ");
+        jtfMessage = new JTextField("Введите термин: ");
         bottomPanel.add(jtfMessage, BorderLayout.CENTER);
-        jtfName = new JTextField("Введите ваше имя: ");
-        bottomPanel.add(jtfName, BorderLayout.WEST);
+
+
         // обработчик события нажатия кнопки отправки сообщения
         jbSendMessage.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 // если имя клиента, и сообщение непустые, то отправляем сообщение
-                if (!jtfMessage.getText().trim().isEmpty() && !jtfName.getText().trim().isEmpty()) {
-                    clientName = jtfName.getText();
+                if (!jtfMessage.getText().trim().isEmpty()) {
+
                     sendMsg();
                     // фокус на текстовое поле с сообщением
                     jtfMessage.grabFocus();
@@ -81,12 +83,7 @@ public class ClientWindow extends JFrame {
             }
         });
         // при фокусе поле имя очищается
-        jtfName.addFocusListener(new FocusAdapter() {
-            @Override
-            public void focusGained(FocusEvent e) {
-                jtfName.setText("");
-            }
-        });
+
         // в отдельном потоке начинаем работу с сервером
         new Thread(new Runnable() {
             @Override
@@ -98,7 +95,7 @@ public class ClientWindow extends JFrame {
                         if (inMessage.hasNext()) {
                             // считываем его
                             String inMes = inMessage.nextLine();
-                            String clientsInChat = "Клиентов в чате = ";
+                            String clientsInChat = "Igor Volchek: "+date;
                             if (inMes.indexOf(clientsInChat) == 0) {
                                 jlNumberOfClients.setText(inMes);
                             } else {
@@ -143,7 +140,7 @@ public class ClientWindow extends JFrame {
     // отправка сообщения
     public void sendMsg() {
         // формируем сообщение для отправки на сервер
-        String messageStr = jtfName.getText() + ": " + jtfMessage.getText();
+        String messageStr =jtfMessage.getText();
         // отправляем сообщение
         outMessage.println(messageStr);
         outMessage.flush();

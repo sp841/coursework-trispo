@@ -32,7 +32,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.Main" />
       <module name="Chat" />
@@ -74,9 +74,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
       </list>
     </recent_temporary>
   </component>
@@ -92,6 +92,7 @@
       <updated>1587577066052</updated>
       <workItem from="1587577076876" duration="824000" />
       <workItem from="1587578114930" duration="445000" />
+      <workItem from="1587626227191" duration="10150000" />
     </task>
     <servers />
   </component>
