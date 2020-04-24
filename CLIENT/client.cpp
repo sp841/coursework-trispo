@@ -1,4 +1,4 @@
-#pragma comment(lib, "ws2_32.lib")
+﻿#pragma comment(lib, "ws2_32.lib")
 #include <winsock2.h>
 #include <iostream>
 #include <string>
@@ -17,7 +17,18 @@ void ClientHandler() {
 		delete[] msg;
 	}
 }
+
+struct DepositInfo {
+	float depositInterest;
+	uint32_t depositTerm;
+	float depositAmount;
+};
+
 int main(int argc, char* argv[]) {
+	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
 	//WSAStartup
 	WSAData wsaData;
 	WORD DLLVersion = MAKEWORD(2, 1);
@@ -40,10 +51,25 @@ int main(int argc, char* argv[]) {
 		NULL, NULL);
 	std::string msg1;
 	while (true) {
+		std::cout << "\nРасчёт процентов по банковскому вкладу\n";
+
+		DepositInfo deposit;
+
+		std::cout << "Введите процент: ";
 		std::getline(std::cin, msg1);
-		int msg_size = msg1.size();
-		send(Connection, (char*)&msg_size, sizeof(int), NULL);
-		send(Connection, msg1.c_str(), msg_size, NULL);
+		deposit.depositInterest = std::stof(msg1);
+
+		std::cout << "Введите срок (в месяцах): ";
+		std::getline(std::cin, msg1);
+		deposit.depositTerm = std::stoi(msg1);
+
+		std::cout << "Введите сумму: ";
+		std::getline(std::cin, msg1);
+		deposit.depositAmount = std::stof(msg1);
+
+		std::cout << "\n";
+
+		send(Connection, (char*)&deposit, sizeof(deposit), NULL);
 		Sleep(10);
 	}
 	system("pause");
