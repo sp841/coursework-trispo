@@ -1,0 +1,3 @@
+﻿  SERVER.cpp
+c:\users\user\desktop\coursework-trispo\код 2.0\server\server\server.cpp(101): warning C4244: инициализация: преобразование "double" в "int", возможна потеря данных
+  SERVER.vcxproj -> C:\Users\User\Desktop\coursework-trispo\Код 2.0\SERVER\Debug\SERVER.exe
