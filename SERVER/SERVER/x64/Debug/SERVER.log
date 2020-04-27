@@ -1,0 +1,4 @@
+﻿  SERVER.cpp
+c:\users\user\desktop\coursework-trispo\server\server\server.cpp(49): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+c:\users\user\desktop\coursework-trispo\server\server\server.cpp(55): warning C4312: приведение типов: преобразование из "int" в "LPVOID" большего размера
+  SERVER.vcxproj -> C:\Users\User\Desktop\coursework-trispo\SERVER\x64\Debug\SERVER.exe
