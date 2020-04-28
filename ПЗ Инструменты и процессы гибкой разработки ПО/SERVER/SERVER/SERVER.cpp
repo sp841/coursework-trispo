@@ -1,9 +1,14 @@
 ﻿#pragma comment(lib, "ws2_32.lib")
 #include <winsock2.h>
 #include <iostream>
+#include <map>
+#include <string>
 #pragma warning(disable: 4996)
 SOCKET Connections[100];
 int Counter = 0;
+std::map <  std::string, std::string > def = { {"Standard","-sample, standard, model, taken as the source for comparison with other similar objects."},
+	{"Standardization","-this is the establishment and application of rules with the aim of streamlining activities in a certain area for the benefit and with the participation of all interested parties."},
+	{"Validity","-the validity and suitability of applying the methods and results of the study in specific conditions." }};
 void ClientHandler(int index) {
 	int msg_size;
 	while (true) {
@@ -11,13 +16,12 @@ void ClientHandler(int index) {
 		char* msg = new char[msg_size + 1];
 		msg[msg_size] = '\0';
 		recv(Connections[index], msg, msg_size, NULL);
-		for (int i = 0; i < Counter; i++) {
-			if (i == index) {
-				continue;
-			}
-			send(Connections[i], (char*)&msg_size, sizeof(int), NULL);
-			send(Connections[i], msg, msg_size, NULL);
-		}
+		
+		msg_size = def[msg].size() + 1;
+			send(Connections[index], (char*)&msg_size, sizeof(def[msg].size() + 1), NULL);
+			send(Connections[index], def[msg].c_str(), msg_size, NULL);
+			
+		
 		delete[] msg;
 	}
 }
@@ -46,6 +50,7 @@ int main(int argc, char* argv[]) {
 		}
 		else {
 			std::cout << "Client Connected!\n";
+			
 			std::string msg = "Hello. It`s my first network program!";
 			int msg_size = msg.size();
 			send(newConnection, (char*)&msg_size, sizeof(int), NULL);
