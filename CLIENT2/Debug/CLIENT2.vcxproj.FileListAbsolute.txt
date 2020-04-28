@@ -1,0 +1,4 @@
+C:\Users\Admin\source\repos\CLIENT2\Debug\CLIENT2.exe
+C:\Users\Admin\source\repos\CLIENT2\Debug\CLIENT2.pdb
+C:\Users\Admin\source\repos\Второе произведение искусства Гисича Юлиана\CLIENT2\Debug\CLIENT2.exe
+C:\Users\Admin\source\repos\Второе произведение искусства Гисича Юлиана\CLIENT2\Debug\CLIENT2.pdb
