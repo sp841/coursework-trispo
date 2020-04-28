@@ -1,2 +1,4 @@
 C:\Users\User\source\repos\SERVER\Debug\SERVER.exe
 C:\Users\User\source\repos\SERVER\Debug\SERVER.pdb
+C:\Users\User\Desktop\Новая папка\SERVER\Debug\SERVER.exe
+C:\Users\User\Desktop\Новая папка\SERVER\Debug\SERVER.pdb

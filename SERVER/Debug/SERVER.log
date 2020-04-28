@@ -1,2 +1,3 @@
 ﻿  SERVER.cpp
-  SERVER.vcxproj -> C:\Users\User\source\repos\SERVER\Debug\SERVER.exe
+C:\Users\User\Desktop\Новая папка\SERVER\SERVER.cpp(5,33): warning C4081: требуется "newline"; обнаружен ";"
+  SERVER.vcxproj -> C:\Users\User\Desktop\Новая папка\SERVER\Debug\SERVER.exe

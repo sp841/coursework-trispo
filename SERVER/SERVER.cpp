@@ -1,27 +1,24 @@
 ﻿#pragma comment(lib, "ws2_32.lib")
 #include <winsock2.h>
 #include <iostream>
-#pragma warning(disable: 4996)
+using namespace std;
+#pragma warning(disable: 4996);
 SOCKET Connections[100];
 int Counter = 0;
 void ClientHandler(int index) {
-	int msg_size;
+	int choice;
 	while (true) {
-		recv(Connections[index], (char*)&msg_size, sizeof(int), NULL);
-		char* msg = new char[msg_size + 1];
-		msg[msg_size] = '\0';
-		recv(Connections[index], msg, msg_size, NULL);
-		for (int i = 0; i < Counter; i++) {
-			if (i == index) {
-				continue;
-			}
-			send(Connections[i], (char*)&msg_size, sizeof(int), NULL);
-			send(Connections[i], msg, msg_size, NULL);
-		}
-		delete[] msg;
+
+		recv(Connections[index], (char*)&choice, sizeof(int), NULL);
+		char definitions[3][100] = { "std is standard language library", "developer is a person who develops a software", "int is a type of variable" };
+		send(Connections[index], definitions[choice], sizeof(definitions[choice]), NULL);
+
 	}
 }
 int main(int argc, char* argv[]) {
+	
+	cout << "developer: Vashkevich Veronika, today is 27 of April, 2020\n";
+
 	//WSAStartup
 	WSAData wsaData;
 	WORD DLLVersion = MAKEWORD(2, 1);
@@ -38,6 +35,7 @@ int main(int argc, char* argv[]) {
 	bind(sListen, (SOCKADDR*)&addr, sizeof(addr));
 	listen(sListen, SOMAXCONN);
 	SOCKET newConnection;
+	
 	for (int i = 0; i < 100; i++) {
 		newConnection = accept(sListen, (SOCKADDR*)&addr, &sizeofaddr);
 		if (newConnection == 0) {
@@ -45,10 +43,7 @@ int main(int argc, char* argv[]) {
 		}
 		else {
 			std::cout << "Client Connected!\n";
-			std::string msg = "Hello. It`s my first network program!";
-			int msg_size = msg.size();
-			send(newConnection, (char*)&msg_size, sizeof(int), NULL);
-			send(newConnection, msg.c_str(), msg_size, NULL);
+
 			Connections[i] = newConnection;
 			Counter++;
 			CreateThread(NULL, NULL,

@@ -1,2 +1,4 @@
 C:\Users\User\source\repos\CLIENT\Debug\CLIENT.exe
 C:\Users\User\source\repos\CLIENT\Debug\CLIENT.pdb
+C:\Users\User\Desktop\Новая папка\CLIENT\Debug\CLIENT.exe
+C:\Users\User\Desktop\Новая папка\CLIENT\Debug\CLIENT.pdb

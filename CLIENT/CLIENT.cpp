@@ -2,17 +2,17 @@
 #include <winsock2.h>
 #include <iostream>
 #include <string>
+using namespace std;
 #pragma warning(disable: 4996)
 SOCKET Connection;
+int choice;
 void ClientHandler() {
-	int msg_size;
 	while (true) {
-		recv(Connection, (char*)&msg_size, sizeof(int), NULL);
-		char* msg = new char[msg_size + 1];
-		msg[msg_size] = '\0';
-		recv(Connection, msg, msg_size, NULL);
-		std::cout << msg << std::endl;
-		delete[] msg;
+		
+		char definitions[100];
+		recv(Connection, definitions, sizeof(definitions), NULL);
+		cout << definitions << endl;
+
 	}
 }
 int main(int argc, char* argv[]) {
@@ -36,13 +36,21 @@ int main(int argc, char* argv[]) {
 	std::cout << "Connected!\n";
 	CreateThread(NULL, NULL, (LPTHREAD_START_ROUTINE)ClientHandler, NULL,
 		NULL, NULL);
-	std::string msg1;
+
+	cout << "enter the number of a defenition" << endl;
+	cout << "1 - std; 2 - developer; 3 - int" << endl;
+	
 	while (true) {
-		std::getline(std::cin, msg1);
-		int msg_size = msg1.size();
-		send(Connection, (char*)&msg_size, sizeof(int), NULL);
-		send(Connection, msg1.c_str(), msg_size, NULL);
+
+		cin >> choice;
+		while (choice < 0 || choice>3) {
+			cout << "no, enter again\n";
+			cin >> choice;
+		}
+		choice--;
+		send(Connection, (char*)&choice, sizeof(int), NULL);
 		Sleep(10);
+
 	}
 	system("pause");
 	return 0;
