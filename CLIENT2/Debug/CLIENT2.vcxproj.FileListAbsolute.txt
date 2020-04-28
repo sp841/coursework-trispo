@@ -1,4 +1,9 @@
 C:\Users\Admin\source\repos\CLIENT2\Debug\CLIENT2.exe
 C:\Users\Admin\source\repos\CLIENT2\Debug\CLIENT2.pdb
+<<<<<<< HEAD
 C:\Users\Admin\source\repos\Произведение исккуства Гисича Юлиана\CLIENT2\Debug\CLIENT2.exe
 C:\Users\Admin\source\repos\Произведение исккуства Гисича Юлиана\CLIENT2\Debug\CLIENT2.pdb
+=======
+C:\Users\Admin\source\repos\Второе произведение искусства Гисича Юлиана\CLIENT2\Debug\CLIENT2.exe
+C:\Users\Admin\source\repos\Второе произведение искусства Гисича Юлиана\CLIENT2\Debug\CLIENT2.pdb
+>>>>>>> 0edd48a12e40ff926f9569a77a598ad5260d875a
