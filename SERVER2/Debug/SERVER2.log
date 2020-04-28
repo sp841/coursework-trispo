@@ -1,0 +1,7 @@
+﻿  SERVER2.cpp
+<<<<<<< HEAD
+  SERVER2.vcxproj -> C:\Users\Admin\source\repos\Произведение исккуства Гисича Юлиана\SERVER2\Debug\SERVER2.exe
+=======
+C:\Users\Masha\source\repos1\SERVER2\SERVER2.cpp(98,14): warning C4244:  инициализация: преобразование "double" в "int", возможна потеря данных
+  SERVER2.vcxproj -> C:\Users\Masha\source\repos1\SERVER2\Debug\SERVER2.exe
+>>>>>>> 0edd48a12e40ff926f9569a77a598ad5260d875a
