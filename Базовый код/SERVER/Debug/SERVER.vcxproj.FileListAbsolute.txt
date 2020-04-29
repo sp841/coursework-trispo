@@ -1,0 +1,2 @@
+D:\Microsoft Visual Studio\Проекты\SERVER\Debug\SERVER.exe
+D:\Microsoft Visual Studio\Проекты\SERVER\Debug\SERVER.pdb
