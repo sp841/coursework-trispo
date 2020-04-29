@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\Венско Виктория\CLIENT\Debug\CLIENT.exe
+C:\Users\Admin\source\repos\Венско Виктория\CLIENT\Debug\CLIENT.pdb
+C:\Users\Admin\source\repos\Венско Виктория 2.0\CLIENT\Debug\CLIENT.exe
+C:\Users\Admin\source\repos\Венско Виктория 2.0\CLIENT\Debug\CLIENT.pdb
+C:\Users\Wojdoo\Downloads\Vika\Вика\Венско Виктория 2.0\CLIENT\Debug\CLIENT.exe
+C:\Users\Wojdoo\Downloads\Vika\Вика\Венско Виктория 2.0\CLIENT\Debug\CLIENT.pdb
+E:\Альберт\Пилющенко Альберт НВ\CLIENT\Debug\CLIENT.exe
+E:\Альберт\Пилющенко Альберт НВ\CLIENT\Debug\CLIENT.pdb
