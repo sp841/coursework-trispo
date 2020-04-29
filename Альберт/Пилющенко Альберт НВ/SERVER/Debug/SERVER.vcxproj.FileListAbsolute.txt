@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\Венско Виктория\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\Венско Виктория\SERVER\Debug\SERVER.pdb
+C:\Users\Admin\source\repos\Венско Виктория 2.0\SERVER\Debug\SERVER.exe
+C:\Users\Admin\source\repos\Венско Виктория 2.0\SERVER\Debug\SERVER.pdb
+C:\Users\Wojdoo\Downloads\Vika\Вика\Венско Виктория 2.0\SERVER\Debug\SERVER.exe
+C:\Users\Wojdoo\Downloads\Vika\Вика\Венско Виктория 2.0\SERVER\Debug\SERVER.pdb
+E:\Альберт\Пилющенко Альберт НВ\SERVER\Debug\SERVER.exe
+E:\Альберт\Пилющенко Альберт НВ\SERVER\Debug\SERVER.pdb
