@@ -1,0 +1,6 @@
+C:\Users\Admin\source\repos\Вероника Плакса\CLIENT\Debug\CLIENT.exe
+C:\Users\Admin\source\repos\Вероника Плакса\CLIENT\Debug\CLIENT.pdb
+C:\Users\Admin\source\repos\Вероника Плакса 2.0\CLIENT\Debug\CLIENT.exe
+C:\Users\Admin\source\repos\Вероника Плакса 2.0\CLIENT\Debug\CLIENT.pdb
+C:\Users\Adam\Desktop\Академия\ТРиСПО\лаба клиент-сервер\для Триспо\Доработанная версия\CLIENT\Debug\CLIENT.exe
+C:\Users\Adam\Desktop\Академия\ТРиСПО\лаба клиент-сервер\для Триспо\Доработанная версия\CLIENT\Debug\CLIENT.pdb
