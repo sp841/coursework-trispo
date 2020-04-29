@@ -1,0 +1,2 @@
+C:\Users\YellowGlove\source\repos\SERVER\Debug\SERVER.exe
+C:\Users\YellowGlove\source\repos\SERVER\Debug\SERVER.pdb
