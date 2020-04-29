@@ -1,0 +1,8 @@
+C:\Users\Admin\source\repos\SERVER2\Debug\SERVER2.exe
+C:\Users\Admin\source\repos\SERVER2\Debug\SERVER2.pdb
+C:\Users\Admin\source\repos\Произведение исккуства Гисича Юлиана\SERVER2\Debug\SERVER2.exe
+C:\Users\Admin\source\repos\Произведение исккуства Гисича Юлиана\SERVER2\Debug\SERVER2.pdb
+C:\Users\HP\Desktop\Алинке\Произведение исккуства Гисича Юлиана\SERVER2\Debug\SERVER2.exe
+C:\Users\HP\Desktop\Алинке\Произведение исккуства Гисича Юлиана\SERVER2\Debug\SERVER2.pdb
+C:\Users\HP\Desktop\Алинa\1\SERVER2\Debug\SERVER2.exe
+C:\Users\HP\Desktop\Алинa\1\SERVER2\Debug\SERVER2.pdb
