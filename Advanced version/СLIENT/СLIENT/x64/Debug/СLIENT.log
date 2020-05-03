@@ -1,0 +1,3 @@
+﻿  СLIENT.cpp
+C:\Users\Andryxa\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\СLIENT\СLIENT\СLIENT.cpp(49): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  СLIENT.vcxproj -> C:\Users\Andryxa\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\СLIENT\x64\Debug\СLIENT.exe
