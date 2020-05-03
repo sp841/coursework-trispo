@@ -1,0 +1,6 @@
+﻿  SERVER.cpp
+C:\Users\Andromeigar\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\SERVER\SERVER\SERVER.cpp(28,37): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andromeigar\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\SERVER\SERVER\SERVER.cpp(17,6): warning C4101: msg_size: неиспользованная локальная переменная
+C:\Users\Andromeigar\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\SERVER\SERVER\SERVER.cpp(62,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+C:\Users\Andromeigar\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\SERVER\SERVER\SERVER.cpp(69,55): warning C4312: приведение типов: преобразование из "int" в "LPVOID" большего размера
+  SERVER.vcxproj -> C:\Users\Andromeigar\source\repos\ПЗ Инструменты и процессы гибкой разработки ПО\SERVER\x64\Debug\SERVER.exe
