@@ -1,0 +1,3 @@
+﻿  СLIENT.cpp
+C:\Users\vlad-\Desktop\ПЗ Инструменты и процессы гибкой разработки ПО — копия\СLIENT\СLIENT\СLIENT.cpp(43,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+  СLIENT.vcxproj -> C:\Users\vlad-\Desktop\ПЗ Инструменты и процессы гибкой разработки ПО — копия\СLIENT\x64\Debug\СLIENT.exe
