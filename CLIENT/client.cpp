@@ -2,6 +2,8 @@
 #include <winsock2.h>
 #include <iostream>
 #include <string>
+#include <time.h>
+#include <iomanip>
 #pragma warning(disable: 4996)
 
 SOCKET Connection;
@@ -13,7 +15,7 @@ void ClientHandler() {
 		char* msg = new char[msg_size + 1];
 		msg[msg_size] = '\0';
 		recv(Connection, msg, msg_size, NULL);
-		std::cout << msg << std::endl;
+		std::cout << msg << "\n";
 		delete[] msg;
 	}
 }
@@ -28,6 +30,12 @@ int main(int argc, char* argv[]) {
 	setlocale(LC_ALL, "ru");
 	SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
+
+	std::cout << "Рудько Сергей СП841\n";
+	time_t time = std::time(nullptr);
+	struct tm tm;
+	localtime_s(&tm, &time);
+	std::cout << std::put_time(&tm, "%d.%m.%Y %H:%M:%S") << std::endl;
 
 	//WSAStartup
 	WSAData wsaData;

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sstream>
 #include <string>
+#include <time.h>
 #include <iomanip>
 #pragma warning(disable: 4996)
 
@@ -19,19 +20,30 @@ void ClientHandler(int index) {
 	DepositInfo deposit;
 	while (true) {
 		recv(Connections[index], (char*)&deposit, sizeof(DepositInfo), NULL);
-		float sum = deposit.depositAmount * (deposit.depositInterest * deposit.depositTerm * 30.4f / (365.f * 100.f));
+		float sum = deposit.depositAmount * (deposit.depositInterest * deposit.depositTerm * 30.4375f / (365.25f * 100.f));
 
 		std::stringstream stream;
 		stream << std::fixed << std::setprecision(2) << sum;
 
 		std::string str = "Сумма процентов по вкладу: " + stream.str();
 
-		int msg_size = strlen(str.c_str());
+		int msg_size = (int)strlen(str.c_str());
 		send(Connections[index], (char*)&msg_size, sizeof(int), NULL);
 		send(Connections[index], str.c_str(), msg_size, NULL);
 	}
 }
+
 int main(int argc, char* argv[]) {
+	setlocale(LC_ALL, "ru");
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+
+	std::cout << "Рудько Сергей СП841\n";
+	time_t time = std::time(nullptr);
+	struct tm tm;
+	localtime_s(&tm, &time);
+	std::cout << std::put_time(&tm, "%d.%m.%Y %H:%M:%S") << std::endl;
+
 	//WSAStartup
 	WSAData wsaData;
 	WORD DLLVersion = MAKEWORD(2, 1);
