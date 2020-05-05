@@ -7,7 +7,7 @@
 #pragma warning(disable: 4996)
 SOCKET Connections[100];
 int Counter = 0;
-std::map <  std::string, std::string > def = { {"Standard","-sample, standard, model, taken as the source for comparison with other similar objects."},
+std::map <  std::string, std::string > def = { {""},
 };
 void ClientHandler(int index) {
 	int msg_size;
